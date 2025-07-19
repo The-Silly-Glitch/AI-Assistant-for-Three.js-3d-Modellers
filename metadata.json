@@ -1,0 +1,6 @@
+{
+  "name": "Gemini 3D Scene Visualizer",
+  "description": "An interactive web application that uses the Gemini API to generate and visualize 3D scenes described by user prompts. The scenes are rendered in real-time using Three.js and React.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
