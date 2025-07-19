@@ -1,14 +1,46 @@
-# Run and deploy your AI Studio app
+# Project Setup Instructions
 
-This contains everything you need to run your app locally.
+## 1. Clone the Repository
 
-## Run Locally
+```bash
+git clone https://github.com/The-Silly-Glitch/AI-Assistant-for-Three.js-3d-Modellers-.git
+cd AI-Assistant-for-Three.js-3d-Modellers-
+```
 
-**Prerequisites:**  Node.js
+## 2. Configure Environment Variables
 
+Open the `.env.local` file and replace the placeholder with your **Gemini API key**:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```env
+GEMINI_API_KEY=Placeholder_api_key
+```
+
+➡️ Replace `Placeholder_api_key` with your actual Gemini API key.
+
+---
+
+## 3. Update Hugging Face Token
+
+Navigate to `services/geminiService.ts` and find the following line:
+
+```ts
+Authorization": `Bearer ${HUGGING_FACE_TOKEN}
+```
+
+➡️ Replace `"HUGGING_FACE_TOKEN"` with your actual Hugging Face token (make sure it stays within **double quotes**).
+
+---
+
+## ✅ You're all set!
+
+Now you can start the project with:
+
+```bash
+npm install
+```
+
+and then
+
+```bash
+npm run dev
+```
