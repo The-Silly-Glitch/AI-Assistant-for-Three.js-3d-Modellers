@@ -172,7 +172,7 @@ export const generateImageTexture = async (prompt: string): Promise<{ imageBytes
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    prompt: prompt,
+                    prompt: prompt + ". This image will be used as a seamless texture map on 3D models within a real-time rendering pipeline. It must support tiling across UV surfaces without visible seams or distortions. The generated texture should reflect accurate material properties such as roughness, specularity, and surface detail appropriate for physically based rendering (PBR). Avoid elements like text, faces, or branding. Prioritize visual consistency, realism, and compatibility with normal/bump map generation workflows.",
                     model: "black-forest-labs/flux-dev",
                     response_format: "b64_json",
                     n: 1,
