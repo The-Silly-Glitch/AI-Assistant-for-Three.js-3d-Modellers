@@ -3,8 +3,8 @@
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/The-Silly-Glitch/AI-Assistant-for-Three.js-3d-Modellers-.git
-cd AI-Assistant-for-Three.js-3d-Modellers-
+git clone https://github.com/The-Silly-Glitch/AI-Assistant-for-Three.js-3d-Modellers.git
+cd AI-Assistant-for-Three.js-3d-Modellers
 ```
 
 ## 2. Configure Environment Variables
